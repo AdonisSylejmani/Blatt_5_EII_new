@@ -40,3 +40,7 @@ print("g) (a+!b)*(a*!c) =", result_g)
 # h) a*(c*b)+c
 result_h = a * (c and b) + c
 print("h) a*(c*b)+c =", result_h)
+
+i) a*(c*b)+c
+result_h = a * (c and b) + c
+print("h) a*(c*b)+c =", result_h)
