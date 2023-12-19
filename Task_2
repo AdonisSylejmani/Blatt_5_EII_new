@@ -1,0 +1,42 @@
+# Gegebene Variablen
+a = True
+b = False
+c = True
+d = False
+A = True
+B = False
+C = True
+D = False
+
+# a) !a
+result_a = not a
+print("a) !a =", result_a)
+
+# b) a(!b+c)
+result_b = a and (not b or c)
+print("b) a(!b+c) =", result_b)
+
+# c) A*(B+C)+(B*!C)
+result_c = A * (B or C) + (B and not C)
+print("c) A*(B+C)+(B*!C) =", result_c)
+
+# d) C+D
+result_d = C or D
+print("d) C+D =", result_d)
+
+# e) 0
+result_e = 0
+print("e) 0 =", result_e)
+
+# f) !a+(!b*!c*v)
+v = True
+result_f = not a + (not b and not c or v)
+print("f) !a+(!b*!c*v) =", result_f)
+
+# g) (a+!b)*(a*!c)
+result_g = (a or not b) and (a and not c)
+print("g) (a+!b)*(a*!c) =", result_g)
+
+# h) a*(c*b)+c
+result_h = a * (c and b) + c
+print("h) a*(c*b)+c =", result_h)
